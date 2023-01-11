@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz do futuro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <img src="logo-quiz-do-futuro.png" />
+
+    <div class="pergunta-1" onclick="checarResposta(event)">
+      <h1>PARA TRABALHAR COM PROGRAMAÇÃO EU PRECISO:</h1>
+
+      <button>Ser uma pessoa boa em matemática</button>
+      <button>Não preciso saber nada de matemática</button>
+      <button class="opcao-certa">Ter conhecimento básico em matemática</button>
+    </div>
+
+    <div class="pergunta-2 escondido" onclick="checarResposta(event)">
+      <h1>PARA TRABALHAR COM PROGRAMAÇÃO EU PRECISO:</h1>
+      <button>Pensar diferente</button>
+      <button class="opcao-certa">Ter um bom raciocínio lógico</button>
+      <button>As duas coisas</button>
+    </div>
+
+    <div class="pergunta-3 escondido" onclick="checarResposta(event)">
+      <h1>PARA TRABALHAR COM PROGRAMAÇÃO EU PRECISO:</h1>
+      <button class="opcao-certa">
+        Gostar de resolver problemas e trabalhar em equipe
+      </button>
+      <button>Ser uma pessoa boa em matemática</button>
+      <button>Ter usado computadores desde criança e jogar vídeo games</button>
+    </div>
+
+    <div class="pergunta-4 escondido" onclick="checarResposta(event)">
+      <h1>PARA TRABALHAR COM PROGRAMAÇÃO EU PRECISO:</h1>
+      <button>Gostar de resolver problemas</button>
+      <button class="opcao-certa">
+        Gostar de resolver problemas e trabalhar em equipe
+      </button>
+      <button>Gostar de resolver problemas e trabalhar sozinho</button>
+    </div>
+
+    <div class="pergunta-5 escondido" onclick="checarResposta(event)">
+      <h1>PARA TRABALHAR COM PROGRAMAÇÃO EU PRECISO:</h1>
+      <button>Ser primo de Larry Page</button>
+      <button class="opcao-certa">Gostar de tecnológia</button>
+      <button>Ter usado computadores desde criança e jogar vídeo games</button>
+    </div>
+
+    <div class="resultado escondido">
+      <h1>PARABÉNS</h1>
+      <h1>VOCÊ ACERTOU <span class="acertos"></span> DE 5 PERGUNTAS</h1>
+      <button class="final" onclick="voltarParaOFuturo()">
+        Voltar para o começo
+      </button>
+    </div>
+
+    <p>
+      <strong><span class="pergunta-atual">1</span>/5</strong>
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

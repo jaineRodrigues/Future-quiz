@@ -1,0 +1,80 @@
+body {
+  font-family: sans-serif;
+  background: #010103;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+}
+
+img {
+  margin-bottom: 80px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 30px;
+}
+
+.final {
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    #f7dc11 0%,
+    #f0a81a 25%,
+    #e4801d 50%,
+    #d85116 75%,
+    #c1292ef8 100%
+  );
+}
+
+button {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 24px;
+  background: #13131a;
+  color: white;
+  border: 4px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    0deg,
+    #f7dc11 0%,
+    #f0a81a 25%,
+    #e4801d 50%,
+    #d85116 75%,
+    #c1292ef8 100%
+  );
+
+  padding: 20px 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  animation: pulsate 1s ease-in-out;
+  background: linear-gradient(
+    0deg,
+    #f7dc11 0%,
+    #f0a81a 25%,
+    #e4801d 50%,
+    #d85116 75%,
+    #c1292ef8 100%
+  );
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 25px #ffca28, 0 0 50px #d85116;
+  }
+}
+
+p {
+  font-size: 24px;
+}
+
+.escondido {
+  display: none;
+}
